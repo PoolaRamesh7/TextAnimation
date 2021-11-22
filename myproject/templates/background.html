@@ -1,0 +1,23 @@
+><!DOCTYPE html>
+{% load static %}
+<html lang="en"
+<head>
+
+<link rel="stylesheet"  type ="text/css" href="{% static 'css/input.css'%}">
+</head>
+<body >
+<div class="container">
+<h2>Background Color effect..</h2>
+
+<form action="{% url 'Backgroundeffect' %}">
+<div class="input-field">
+<input type="text" name="name" placeholder="" required>
+<label> Please Enter Name</label>
+<span></span></div>
+<input type="submit" value="Show Result" class="btn">
+
+</form>
+</div>
+</body>
+</html>
+

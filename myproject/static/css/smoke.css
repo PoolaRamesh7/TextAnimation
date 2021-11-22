@@ -1,0 +1,117 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+section
+{
+	height: 100vh;
+	background: #000;
+	text-transform: uppercase;
+}
+section:bofere{
+	
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background: radial-gradient(#03a9f4, #004b6d);
+	/*background: linear-gradient(to right, #f00,#f00,#0f0,#0ff,#ff0,#ff0,);*/
+	mix-blend-mode: color;
+	pointer-events: none;
+}
+video
+{
+  object-fit: cover;
+}
+h1
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	color: #ff0f;
+	font-size: 4em;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	animation: animate 5.5s linear forwards;
+}
+h1 span
+{
+	opacity: 0;
+	display: inline-block;
+	filter: blur(1px);
+	animation: animate 2s linear forwards;
+}
+@keyframes animate
+{
+	0%
+	{
+		filter: blur(10px);
+		opacity: 0;
+		transform: rotateY(90deg);
+	}
+	100%
+	{
+		filter: blur(0);
+		opacity: 2;
+		transform: rotateY(0deg);
+	}
+}
+h1 span:nth-child(1)
+{
+	animation-delay: 1s;
+}
+h1 span:nth-child(2)
+{
+	animation-delay: 2s;
+}
+h1 span:nth-child(3)
+{
+	animation-delay: 2.5s;
+}
+h1 span:nth-child(4)
+{
+	animation-delay: 3s;
+}
+h1 span:nth-child(5)
+{
+	animation-delay: 3.5s;
+}
+h1 span:nth-child(6)
+{
+	animation-delay: 3.75s;
+}
+h1 span:nth-child(7)
+{
+	animation-delay: 3.9s;
+}
+h1 span:nth-child(8)
+{
+	animation-delay: 4.15s;
+}
+h1 span:nth-child(9)
+{
+	animation-delay: 4.55s;
+}
+
+section:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: linear-gradient(to right,#f00,#03a9f4,#0f0,#f0f,#f00,#004bdd);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
+

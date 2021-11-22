@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<style>
+body {
+	background: url("{% static 'images/download1.jpg' %}");
+	background-size:cover;
+	background-color: aqua;
+}
+.ref {
+	margin-top: 70px;
+	font-size:20px;
+	}
+h1 {
+	
+	font-size:3.7em;
+	color:#cccc33;
+	text-shadow: 0 1px 10px #f00,0 0 15px #00f,0 0 18px #000000;
+	}
+.ref a {
+
+	text-decoration:none;
+	color:#fff;
+	background:#cc00ff;
+	padding:10px;
+	border-radius:5px;
+}
+a:nth-child(2) {
+background: #CC33ff;
+}
+.ref a:hover {
+	background:#ffccff;
+	color: black;
+}
+	
+</style></head>
+<body><br>
+<h1 align="center">Text Animations</h1>
+<div class="ref" align="center">
+<a href="{% url 'smoke' %}">For Smoke Effect Click Here</a><br><br><br>
+<a href="{% url 'Reflection' %}">For Reflection Effect Click Here</a><br><br><br>
+<a href="{% url 'Background' %}">For background color change Click Here</a><br><br><br>
+<a href="{% url 'Fire' %}">For Fire Text Animation Click Here</a><br><br><br>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body
+{
+margin: 0;
+padding: 0;
+background: linear-gradient(90deg, #6666ff, #33ccff,#4e004e);
+}
+h1
+{
+	
+	position: absolute;
+text-align:center;
+margin-left:395px;
+margin-top: 455px;
+font-family: "Arial Black";
+font-size: 6em;
+line-height: 1em;
+letter-spacing:10px;
+text-transform: uppercase;
+background: url(fire1.jpg);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+opacity:0;
+animation: anim 10s 11.5s linear infinite,
+		   anim1 3s 13s linear forwards;
+
+}
+img {
+	position: absolute;
+	width:500px;
+	height:700px;
+	margin-left:400px;
+	opacity:0;
+	animation: anim2 2s 5s linear forwards;
+}
+
+.r7  {
+	width:500px;
+	height:100px;
+	background:rgba(0,0,0,.9);
+	position:absolute;
+	margin-top:458px;
+	margin-left:400px;
+	opacity:0.9;
+	transform:scaleX(0);
+	animation:animat 2s 7s linear forwards;
+
+}
+@keyframes anim 
+{
+0%
+{
+background-position: 0 0; 
+}
+100%
+{
+background-position: 100% 100%;
+}
+}
+
+@keyframes anim1 {
+	0%{
+		transform: scaleX(5) rotateX(360deg);
+		letter-spacing:30px;
+		opacity:1
+	}
+	100%{
+		transform: scaleX(1) rotateX(0deg);
+		letter-spacing:10px;
+		opacity:1
+		
+	}
+}
+
+@keyframes anim2 {
+	0%{
+		transform: scaleX(0.1) rotate(50deg);
+		opacity:1;
+	}
+	100%{
+		transform: scaleX(1) rotate(0deg);
+		opacity:1;
+		
+	}
+}
+
+@keyframes animat {
+	0% {
+		
+	transform:scaleX(0);
+	}
+  100% {
+	  
+	transform:scaleX(1);
+  }
+  
+}
